@@ -1,6 +1,6 @@
 #CRUD ==> create retrive update delete
 
-#append , insert, extend
+#append , insert , extend
 
 #append add element at last
 
@@ -28,10 +28,12 @@ a.append(c)
 print(a)
 
 
-#insert add element at given index
-#        0          1        2      3
-listB=["grapes","papaya","mango","banana"]    #last index =3 total length= 4
-listB.insert(0,"watermelon")
+#insert => add element at given index
+
+#         0         1       2       3
+listB=["grapes","papaya","mango","banana"]    #last index =3, total length=4
+
+listB.insert(0,"watermelom")
 print(listB)
 
 listB.insert(2,"cherry")
@@ -42,9 +44,9 @@ print(listB)
 
 
 #extend 
-# extend - one list to another list
-# extend() in Python is a list method used to add multiple items from another iterable (list, tuple, set, string, etc.) 
-# to the end of the list.
+#extend=> one list to another list
+#extend() in python is a list method used to add multiple items from another iterable (list,tuple,set,string,etc)
+#add to end of the list
 
 
 a=['d','i','p']
@@ -63,39 +65,36 @@ a.extend(b)
 print(a)
 
 
-a=[1,2]
-b=[3,4]
-a.extend(b)
-print(a)
-
 #deleting elements
-
-#del listname[i], pop(i),pop,remove(el),clear
-
+# del listname[1], pop(i), pop, remove(e1), clear
+ 
 #del
-#        0       1        2       3       4
-listC=["pune","nagpur","delhi","mumbai","jaipur"]
+ 
+#        0        1        2        3          4         
+listC=["pune", "nagpur", "delhi", "mumbai", "jaipur"]
 
 del listC[2]
 print(listC)
+print("===================================")
 
-#pop : delets last element and teturn deleted value
+#pop : deletes last element and return deleted values
 
-#        0       1        2       3       4
-listC=["pune","nagpur","delhi","mumbai","jaipur"]
-ret =listC.pop()
+#        0        1        2        3          4         
+listC=["pune", "nagpur", "delhi", "mumbai", "jaipur"]
+ret=listC.pop()
 print(listC)
 print(ret)
 
 
-
-#        0       1        2       3       4
-listC=["pune","nagpur","delhi","mumbai","jaipur"]
+#        0        1        2        3          4         
+listC=["pune", "nagpur", "delhi", "mumbai", "jaipur"]
 listC.pop(2)
 print(listC)
 
-#remove(ele/value)==> delets first matching value
-listC=["pune","jaipur","delhi","nagpur","delhi","mumbai","pune","jaipur"]
+#remove(ele/value)==> deletes first matching value
+        
+listC=["pune","jaipur","delhi", "nagpur", "delhi", "mumbai","pune", "jaipur"]
+
 
 listC.remove("pune")
 print(listC)
@@ -103,10 +102,14 @@ print(listC)
 listC.remove("delhi")
 print(listC)
 
-#clear--> delets all elements
-listC=["pune","jaipur","delhi","nagpur","delhi","mumbai","pune","jaipur"]
+
+#clear => delete all elements
+listC=["pune","jaipur","delhi", "nagpur", "delhi", "mumbai","pune", "jaipur"]
 listC.clear()
 print(listC)
+
+
+
 
 # | Method              | What it does                 | Works by |
 # | ------------------- | ---------------------------- | -------- |
@@ -115,12 +118,3 @@ print(listC)
 # | `pop()`             | Deletes last element         | —        |
 # | `remove(value)`     | Deletes first matching value | value    |
 # | `clear()`           | Deletes all elements         | —        |
-
-
-
-
-
-
-
-
-
