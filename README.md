@@ -1,1 +1,1 @@
-Minskole python
+ python
