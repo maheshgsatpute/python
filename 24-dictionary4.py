@@ -1,0 +1,47 @@
+
+# dict.fromkeys() - is used to create a new dictionary using:
+#     * A sequence of keys
+#     * One default value for all keys
+
+# Syntax
+    # dict.fromkeys(keys, default_value)
+        # * keys → list/tuple/string/set (any iterable)
+        # * default_value → value assigned to all keys
+        # (default is None if not provided)
+
+#creating dictionary with keys
+
+keys=["name","age","city"]
+info=dict.fromkeys(keys)
+print(info)
+
+info["name"]="mahesh"
+print(info)
+
+
+dict1=dict.fromkeys("abc",0)
+print(dict1)
+
+
+key=["abc"]
+dict2=dict.fromkeys(key,0)
+print(dict2)
+
+
+#--------------------------------------------------------------
+# Important Warning - If you use a mutable value like a list, all keys share the SAME list.
+# Why - Because the same list is used for both keys.
+d= dict.fromkeys(["a","b"],[])
+print(d)
+
+d["a"].append("mahi")
+print(d)
+
+d["b"].append(111)
+print(d)
+
+d["a"] = 222
+print(d)
+
+d["b"] = "mahesh"
+print(d)
