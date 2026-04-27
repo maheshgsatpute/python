@@ -153,3 +153,35 @@ txt="I love Python programming... python is very rasy to go language..."
 q3=txt.replace("Python","Javascript")
 print(q3)
 
+
+# swapcase()
+print("MAHESH".swapcase())
+print("vishwa".swapcase())
+print("VisHWa".swapcase())
+
+# title()
+txt = "i love Python programming...python is very easy to go language..."
+q3 = txt.replace("Python","Javascript")
+print(q3)
+
+
+# zfill
+txt1= "42"
+txt2= "788"
+print(txt1.zfill(5))
+print(txt2.zfill(5))
+
+# partition()
+
+txt3="mahesh_satpute@gmail.com"
+x=txt3.partition("@")
+print(x)
+print(type(x))
+x=txt3.partition("@gmail")
+print(x)
+print(type(x))
+
+# reverse string
+name= "mahesh"
+rev = name[::-1]
+print(rev)
